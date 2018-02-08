@@ -1,0 +1,9 @@
+[submodule "tgim-gui"]
+	path = tgim-gui
+	url = https://github.com/hiratake26to/tgim-gui
+[submodule "tgim-generator"]
+	path = tgim-generator
+	url = https://github.com/hiratake26to/tgim-generator
+[submodule "tgim-packager"]
+	path = tgim-packager
+	url = https://github.com/hiratake26to/tgim-packager
