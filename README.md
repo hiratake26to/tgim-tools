@@ -21,6 +21,17 @@ Otherwise
 $. ./tgim.profile
 ```
 
+After, available to use.
+
+- `tgim-generator`
+Generate to ns-3 code(flagment) according to DSL.
+
+- `tgim-gui`
+GUI enviroment for ns-3 scenario writting.
+
+- `tgim-packager`
+Packaging to ns-3 scenario files from several files( for example DSL, UDA).
+
 LICENSE
 -------
 
