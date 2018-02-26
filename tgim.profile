@@ -1,7 +1,6 @@
 #!/bin/sh
 
-cd `dirname $0`
-WD=`pwd`
+WD=$(cd $(dirname $0) && pwd)
 
 GENERATOR_PATH="$WD/tgim-generator/bin"
 GUI_PATH="$WD/tgim-gui/script"
