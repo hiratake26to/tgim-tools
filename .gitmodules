@@ -7,3 +7,6 @@
 [submodule "tgim-packager"]
 	path = tgim-packager
 	url = https://github.com/hiratake26to/tgim-packager
+[submodule "tgim-box"]
+	path = tgim-box
+	url = https://github.com/hiratake26to/tgim-box

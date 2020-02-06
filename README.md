@@ -23,14 +23,17 @@ $. ./tgim.profile
 
 After, available to use.
 
-- `tgim-generator`
-Generate to ns-3 code(flagment) according to DSL.
-
 - `tgim-gui`
 GUI enviroment for ns-3 scenario writting.
 
+- `tgim-box`
+tgim-box provide a Box API for C++ and Python.
+
+- `tgim-generator`
+Generate to ns-3 code(flagment) according to NSOM.
+
 - `tgim-packager`
-Packaging to ns-3 scenario files from several files( for example DSL, UDA).
+Packaging to ns-3 scenario files from several files( for example NSOM, UDA).
 
 LICENSE
 -------

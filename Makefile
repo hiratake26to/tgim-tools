@@ -1,18 +1,19 @@
-TGIM_GUI=tgim-gui
-TGIM_GEN=tgim-generator
+TGIM_TOOLS=tgim-box tgim-generator tgim-gui
 
-tgim-tools: tgim-gui tgim-generator ;
+all: $(TGIM_TOOLS)
+	@echo "\e[31m[Build Done]\e[m" $^
 
-$(TGIM_GUI): FORCE
-	cd $@; $(MAKE)
+define template
+$(1): FORCE
+	@cd $1; $(MAKE)
+endef
 
-$(TGIM_GEN): FORCE
-	cd $@; $(MAKE)
+$(foreach tool,$(TGIM_TOOLS),$(eval $(call template,$(tool))))
 
 FORCE:
 
 .PHONY: clean
 
 clean:
-	cd $(TGIM_GUI); $(MAKE) clean
-	cd $(TGIM_GEN); $(MAKE) clean
+	$(foreach x,$(TGIM_TOOLS),cd $x;$(MAKE) clean;cd ..;)
+	@echo "\e[31m[Clean Done]\e[m"
